@@ -54,4 +54,3 @@ class Penguin extends Animal{
   
 }
     
-    
