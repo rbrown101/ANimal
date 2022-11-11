@@ -1,7 +1,20 @@
+/**
+* This class represents the overall submersion of the animals Penguin, Fish, and Creature.
+* It creates a space where the organized code can work together when printing. This
+* class contains an array list and methods that control what will be drawn when a specific 
+* button is pressed.
+*
+*
+*
+* @author R. Brown
+* @version 1.0.0
+*/
+
 int animalToDraw;
 Penguin x;
   ArrayList<Animal> objectzoo;
- //array.add 
+
+//this controls the size of the screen and  
 void setup() {
   size(500,500);
   objectzoo = new ArrayList<Animal>();
@@ -16,7 +29,7 @@ void draw() {
      objectzoo.get(i).walk();
   }
 }
-
+//this method selects which animal to draw based on which key is pressed
  void keyPressed(){
   if(key=='f')
   animalToDraw = 0;
@@ -25,7 +38,8 @@ void draw() {
   if(key=='c')
   animalToDraw = 2;
  }
- 
+ //when the mouse is clicked, this method adds the selected animal to the zoo which is
+ //chosen based on the button clicked
  void mouseClicked(){
    if (animalToDraw==0)
    objectzoo.add(new Fish (color (#28E0E8), color (5,5,5), mouseX, mouseY, 1));
