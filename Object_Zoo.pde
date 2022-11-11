@@ -1,8 +1,8 @@
 /**
 * This class represents the overall submersion of the animals Penguin, Fish, and Creature.
 * The sketch draws the animals and controls how they are produced (which key is pressed
-*) 
-*
+* ) 
+* It contains methods that actually draw all of the animals
 *
 * @author R. Brown
 * @version 1.0.0
