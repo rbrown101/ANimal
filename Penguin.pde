@@ -1,9 +1,11 @@
 /**
-* This class represents one part of Object Zoo. It extends the animal class. It draws a penguin and deals with the walk and 
-*body parts.
+* This class represents one part of Object Zoo. It extends the animal class. It draws 
+*a penguin and deals with the walk and body parts.
 * @author R. Brown
 * @version 1.0.0
 */
+
+//these are the variables for the penguin
 class Penguin extends Animal{
   color bodyColor; 
   color eyeColor;
@@ -12,7 +14,8 @@ class Penguin extends Animal{
   color feetColor;
   color armColor;
   color floorColor;
- //contructs a penguin at the given location
+  
+ //this contructs a penguin at the given location
   public Penguin(color bc, color ec, color ic, color nc, color fc, color ac, color lc, int x, int y, int size) {
    super(x,y,size);
    //labels variables within the penguin class

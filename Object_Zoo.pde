@@ -1,9 +1,7 @@
 /**
 * This class represents the overall submersion of the animals Penguin, Fish, and Creature.
-* It creates a space where the organized code can work together when printing. This
-* class contains an array list and methods that control what will be drawn when a specific 
-* button is pressed.
-*
+* The sketch draws the animals and controls how they are produced (which key is pressed
+*) 
 *
 *
 * @author R. Brown
@@ -14,14 +12,14 @@ int animalToDraw;
 Penguin x;
   ArrayList<Animal> objectzoo;
 
-//this controls the size of the screen and  
+//this controls the size of the screen 
 void setup() {
   size(500,500);
   objectzoo = new ArrayList<Animal>();
   Animal.setDim(500,500);
   
 }
-
+//this draws the background and moves all the animals in the zoo
 void draw() {
   background (199,250,247);
   for(int i=0; i<objectzoo.size();i++) {
